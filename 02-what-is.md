@@ -1,23 +1,8 @@
-# Why is MongoDB special?
+# Context: Why is MongoDB special?
 
 - **first NoSQL** database @ Prisma
 - JSON based documents instead of tables
-- schemas optional and rarely used
-
-## Relational DBs
-
-#### Table Person
-
-| id  | name | posts            |
-| --- | ---- | ---------------- |
-| 1   | Kim  | postId1, postId2 |
-
-#### Table Posts
-
-| id  | title        | content                     |
-| --- | ------------ | --------------------------- |
-| 1   | Hello World  | This is the best post ever. |
-| 2   | Hello Prisma | This is even better.        |
+- usually **untyped**
 
 ## NoSQL Database
 
@@ -41,5 +26,20 @@
 }]
 
 ```
+
+## Relational DBs
+
+#### Table Person
+
+| id [Int] | name [String] |
+| -------- | ------------- |
+| 1        | Kim           |
+
+#### Table Posts
+
+| id [Int] | title [String] | content [Text]              | personID [Int] |
+| -------- | -------------- | --------------------------- | -------------- |
+| 1        | Hello World    | This is the best post ever. | 1              |
+| 2        | Hello Prisma   | This is even better.        | 1              |
 
 [Next](./03-introspection.md)

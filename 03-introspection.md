@@ -1,4 +1,4 @@
-# Introspection
+# Automatically get a Prisma schema with introspection
 
 - Prisma users want typed DB access
  - No schema 👉 no types?

@@ -1,4 +1,4 @@
-# Inferring types
+# Inferring types by looking at data
 
 Example of **inconsistent** data types for the field `height`:
 
@@ -16,6 +16,11 @@ Example: `height` as `String` and `Int`.
 },
 {
 	"_id": someRandomIdB
+	"name": "Siri",
+	"height": 160
+}
+{
+	"_id": someRandomIdC
 	"name": "Kim",
 	"height": "175"
 }]
@@ -36,12 +41,12 @@ The resulting schema would look like:
 ```tsx
 model Person {
   id     String @id @default(dbgenerated()) @map("_id") @db.ObjectId
-  /// Multiple data types found: String: 50% Int32: 50% out of 1000 sampled entries
+  /// Multiple data types found: String: 33.3%, Int32: 66.7% out of 3 sampled entries
   height Int
   name   String
 }
 ```
 
-= best effort, can go wrong. Client might break if type not matched.
+= best effort, clean your data or it can/will go wrong.
 
 [Next](./05-without-composite-types.md)

@@ -1,8 +1,7 @@
-# Without Composite Types
+# Embedded documents
 
-- Composite Types is the name of the Prisma feature
+- Composite Types is the name of the Prisma feature, MongoDB calls them **embedded documents**
 - Plan to add support for nested objects to other DBs e.g. Postgres
-- MongoDB calls them **embedded documents**
 
 Example:
 ```json

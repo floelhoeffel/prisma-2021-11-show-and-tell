@@ -1,6 +1,6 @@
 # Deprecating type
 
-- Undocumented and buggy `type` usage to alias strings with be deprecated.
+- Undocumented and buggy `type` usage to alias strings will be deprecated.
 
 Example:
 
@@ -32,6 +32,6 @@ https://github.com/prisma/prisma/issues/9939
    | 
 ```
 
-And will then remove support with Prisma `4.0.0`
+We will then remove support with Prisma `4.0.0`
 
 [Next](./08-db-push.md)

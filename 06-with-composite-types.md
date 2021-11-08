@@ -5,6 +5,14 @@
 Introspecting the same collection, now yields a fully typed structure:
 
 ```tsx
+model Person {
+  id      String         @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  address PersonAddress
+  /// Multiple data types found: String: 33.3%, Int32: 66.7% out of 3 sampled entries
+  height  Int
+  name    String         @unique
+}
+
 type PersonAddress {
   city   PersonAddressCity
   number Int
@@ -19,14 +27,6 @@ type PersonAddressCity {
 type PersonAddressCityPosition {
   lat  String
   long String
-}
-
-model Person {
-  id      String         @id @default(dbgenerated()) @map("_id") @db.ObjectId
-  address PersonAddress
-  /// Multiple data types found: String: 33.3%, Int32: 66.7% out of 3 sampled entries
-  height  Int
-  name    String         @unique
 }
 ```
 
