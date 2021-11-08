@@ -8,3 +8,5 @@
 = GA scope for schema management with Prisma and MongoDB
 
 [Next](./02-what-is.md)
+
+
