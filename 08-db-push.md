@@ -3,7 +3,7 @@
 - We decided to not invest into schema migrations as the vast majority* of projects don't use schemas
 - added support for `index` and `unique` so at least management of  indexes and constraints is possible,
 
-*According to MongoDB PMs over 2/3 of all projects in Atlas don't use schemas at all.
+*over 2/3 of the projects in Atlas don't use schemas
 
 ```tsx
 model BlogPost {
