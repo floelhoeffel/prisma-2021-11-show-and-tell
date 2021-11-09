@@ -25,6 +25,6 @@ npx prisma db push
 
 Will now push those indexes to the database.
 
-[Next](./01-intro.md)
+[Back to start](./01-intro.md)
 
 
